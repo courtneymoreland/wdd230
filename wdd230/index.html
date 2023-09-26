@@ -3,61 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Courtney James">
-    <meta name="description"
-        content="WDD 230 - Web Frontend Development - Courtney James course assignment portal">
-    <title>Courtney James - WDD 230 - Web Frontend Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Courtney James's WDD 230 Assignment Portal">
+    <title>WDD 230 - Course Homepage</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(max-width: 654px)">
+    <link rel="stylesheet" href="styles/small.css" media="(max-width: 509px)">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="images/placeholder.png" alt="img" height="475" width="472">
-            <h1>Courtney James</h1>
-        </div>
-
-        <div class="nav">
-          <h2>WDD 230: Web Frontend Development</h2>
-          <nav>
-            <a href="#">Home</a> |
-            <a href="chamber/siteplan.html">Site Plan</a> |
-            <a href="chamber/">Chamber</a> |
-            <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a> |
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/9?lang=eng" target="_blank">Scripture</a>
-          </nav>
-      </div>
-
-        <div class="card">
-            <h2>WDD 230: Web Frontend Development</h2>
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>Learning Activity 1<a</a></li>
-                <li>Learning Activity 1<a</a></li>
-                <li>Learning Activity 1<a</a></li>
-                <li>Learning Activity 1<a</a></li>
-                <li>Learning Activity 1<a</a></li>
-            </ul>
-        </div>
-
-        <div class="card">
-          <h3>Information</h3>
-          <ul>
-              <li>Information<a</a></li>
-              <li>Information<a</a></li>
-              <li>Information<a</a></li>
-          </ul>
-      </div>
-
-
-        <footer>
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Courtney James WA <a href="https://www.byui.edu"
-                    target="_blank">BYU-Idaho Online Learning</a></p>
-            <p>Last Updated: <span id="Date"></span></p>
-        </footer>
+    <header>
+        <h1>Courtney James</h1>
+        <img src="images/placeholder.png" alt="Courtney James's profile picture">
+    </header>
+    <main>
+        <h2>WDD 230: Assignment Portal</h2>
+        <ul>
+            <li>Lesson 02: <a href="./lesson02/design-principles.html">Design Principles Document</a></li>
+            <li>Lesson 03:</li>
+            <li>Lesson 04:</li>
+            <li>Lesson 05:</li>
+            <li>Lesson 06:</li>
+            <li>Lesson 07: </li>
+            <li>Lesson 08: </li>
+            <li>Lesson 09: </li>
+            <li>Lesson 10:</li>
+            <li>Lesson 11:</li>
+        </ul>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Courtney James | Idaho | <a href="https://www.byui.edu/online"
+            target="_blank">BYUI Online Learning</a><br>
+        <span id="updated"></span>
+    </footer>
     </div>
-    <script src="scripts/getdates.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
