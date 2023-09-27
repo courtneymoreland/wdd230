@@ -5,7 +5,7 @@ h1 {
 
 @media screen and (max-width: 405px) {
     header {
-        grid-template-columns: auto 54.8px; 
+        grid-template-columns: auto 48.8px; 
     }
     
     h2 {
