@@ -100,6 +100,15 @@ footer a {
     color: lightblue;
     font-size: 12px;
 }
+header::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #003459;
+    width: 70%;
+    margin: 1em auto;
+}
+
 
 .topnav {
     overflow: hidden;
