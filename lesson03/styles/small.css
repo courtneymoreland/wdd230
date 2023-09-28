@@ -1,0 +1,33 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px 0;
+    width: 95%;
+    margin: 20px auto;
+    background-color: #fff; 
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ddd; 
+}
+
+main > section {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto; 
+    background-color: #f9f9f9; 
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+section img {
+    max-width: 400px;
+}
+.color-box {
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px; 
+    border: 1px solid #ccc;
+}
