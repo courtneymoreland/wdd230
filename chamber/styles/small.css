@@ -1,0 +1,39 @@
+@media(max-width: 479px) {
+    .home-button {
+      background-color: #000000;
+    }
+    .home-mobile-menu {
+      padding: 16px;
+    }
+    .home-container1 {
+      width: 468px;
+      height: 199px;
+    }
+    .home-description {
+      position: relative;
+    }
+    .home-description1 {
+      position: relative;
+    }
+    .home-image1 {
+      display: none;
+    }
+    .home-image2 {
+      top: -6px;
+      left: 14px;
+      width: 445px;
+      height: 719px;
+      position: absolute;
+    }
+    .home-information {
+      height: 452px;
+      flex-direction: row;
+    }
+    .home-links2 {
+      top: 359px;
+      left: 16px;
+      width: 337px;
+      height: 33px;
+    }
+  }
+  

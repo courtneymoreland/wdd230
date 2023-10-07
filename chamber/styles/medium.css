@@ -1,0 +1,40 @@
+@media(max-width: 767px) {
+    .home-navbar-interactive {
+      padding-top: 24px;
+    }
+    .home-button2 {
+      font-size: 12px;
+    }
+    .home-logo {
+      width: 36px;
+      height: 36px;
+    }
+    .home-company {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .home-items {
+      display: none;
+    }
+    .home-burger-menu {
+      display: flex;
+    }
+    .home-button {
+      padding: 12px;
+    }
+    .home-image {
+      width: 14px;
+      height: 14px;
+    }
+    .home-logo2 {
+      width: 36px;
+      height: 36px;
+    }
+    .home-title {
+      font-size:25px;
+    }
+    .weather-title {
+      font-size:25px;
+    }
+  }
+  
