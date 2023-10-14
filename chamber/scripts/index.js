@@ -72,3 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("header").prepend(banner);
     }
 });
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
