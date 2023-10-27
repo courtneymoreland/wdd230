@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Check if localStorage already has a visit count
+if (localStorage.getItem('visitCount')) {
+    // If yes, retrieve and increment the count
+    let count = parseInt(localStorage.getItem('visitCount'));
+    count++;
+    localStorage.setItem('visitCount', count);
+    document.getElementById('visit-count').textContent = count;
+} else {
+    // If not, initialize the count to 1 and store it in localStorage
+    localStorage.setItem('visitCount', 1);
+    document.getElementById('visit-count').textContent = 1;
+}
