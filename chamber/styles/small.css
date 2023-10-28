@@ -35,5 +35,10 @@
       width: 337px;
       height: 33px;
     }
+    .discover-main {grid-template-columns: 1fr}
+    .image-gallery {
+      grid-column: 1;
+      grid-row: 2;
+    }
   }
   

@@ -865,3 +865,89 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+ 
+/* DISCOVER PAGE */
+.discover-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Styling for the last visit message */
+#lastVisit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .25rem auto;
+  grid-column: 1/3;
+  grid-row: -2;
+  padding: 0;
+  width: 50%;
+  background-color: #003459;
+  color: white;
+}
+
+/* Styles for content containers */
+.discover-main div {
+  background-color: #ADD8E6;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px 1px #333;
+}
+
+.discover-main div h2 {
+  margin-top: .2rem;
+  margin-bottom: .8rem;
+  text-shadow: 1px 2px 8px white;
+}
+
+/* Gallery styles */
+.image-gallery {
+  grid-column: 2;
+  grid-row: 2/8;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.image-gallery img {
+  border: 1px solid black;
+  margin: .5rem;
+  box-shadow: 1px 1px 3px 1px #333;
+  transition: filter 0.5s;
+}
+
+/* Add blur effect on images with the "data-src" attribute */
+.image-gallery img[data-src] {
+  filter: blur(0.1em);
+}
+
+/* Remove blur effect on all other images */
+.image-gallery img {
+  filter: blur(0em);
+}
+
+/* Positioning for different sections */
+#lastVisit {
+  grid-column: 1/3;
+  grid-row: -2;
+}
+
+.discover-LocalBizConnect {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.discover-population, .discover-geographic, .discover-age, .discover-economic, .discover-education, .discover-cultural {
+  grid-column: 1;
+}
+/* Add a hover effect to images in the image gallery */
+.image-gallery img {
+  transition: transform 0.3s;
+}
+
+/* Define the hover effect */
+.image-gallery img:hover {
+  transform: scale(1.1); /* This will make the image slightly larger on hover */
+}
+
