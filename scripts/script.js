@@ -32,3 +32,20 @@ if (localStorage.getItem('visitCount')) {
     localStorage.setItem('visitCount', 1);
     document.getElementById('visit-count').textContent = 1;
 }
+function checkPassword() {
+    const password = document.getElementById("password");
+    const passwordConfirm = document.getElementById("password-confirm");
+    const message = document.getElementById("password-message");
+
+    if (password.value !== passwordConfirm.value) {
+        message.textContent = "Passwords do not match.";
+    } else {
+        message.textContent = "";
+    }
+}
+
+function updateRatingValue() {
+    const rating = document.getElementById("rating");
+    const ratingValue = document.getElementById("rating-value");
+    ratingValue.textContent = rating.value;
+}

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 40px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+button {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#password-message {
+    color: red;
+}
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="range"] {
+    flex: 1;
+}
+
+span#rating-value {
+    margin-left: 10px;
+}
+
+
+/* Define CSS variables */
+:root {
+    --main-color: #007bff;
+    --border-color: #ccc;
+}
+
+/* Apply CSS variables */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+button {
+    border: 1px solid var(--border-color);
+}
+
+button {
+    background-color: var(--main-color);
+}
