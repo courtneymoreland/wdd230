@@ -126,3 +126,21 @@ function myFunction() {
     // Update the last visit date in localStorage
     localStorage.setItem('lastVisit', Date.now().toString());
 });
+    // Function to get the current date and time in the desired format
+    function getCurrentDateTime() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        
+        return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    }
+
+    // Set the value of the hidden timestamp field
+    const timestampField = document.getElementById('timestamp');
+    if (timestampField) {
+        timestampField.value = getCurrentDateTime();
+    }

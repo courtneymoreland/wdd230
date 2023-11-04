@@ -956,3 +956,103 @@ input:checked+.slider:before {
   transform: scale(1.1);
   /* This will make the image slightly larger on hover */
 }
+
+/* join page */
+:root {
+  --main-color: #007bff;
+  --border-color: #ccc;
+}
+/* Base Styles for Join Form */
+#join-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#join-form {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 40px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#join-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+#join-form input[type="text"],
+#join-form input[type="password"],
+#join-form input[type="email"],
+#join-form input[type="range"],
+#join-form select,
+#join-form textarea,
+#join-form button {
+  width: 95%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#join-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#join-form input[type="range"] {
+  flex: 1;
+}
+
+
+/* Apply CSS variables */
+#join-form input[type="text"],
+#join-form input[type="password"],
+#join-form input[type="email"],
+#join-form input[type="range"],
+#join-form button {
+  border: 1px solid var(--border-color);
+}
+
+#join-form button {
+  background-color: var(--main-color);
+}
+
+/* Style for Membership Benefits */
+#membershipBenefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.membership-level {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.membership-level h3 {
+  color: #007BFF;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.membership-level p {
+  margin: 5px 0;
+}
+  .membership-level {
+      flex-basis: 48%; 
+}
