@@ -994,6 +994,7 @@ input:checked+.slider:before {
 #join-form input[type="password"],
 #join-form input[type="email"],
 #join-form input[type="range"],
+#join-form input[type="tel"],
 #join-form select,
 #join-form textarea,
 #join-form button {
@@ -1019,6 +1020,7 @@ input:checked+.slider:before {
 #join-form input[type="text"],
 #join-form input[type="password"],
 #join-form input[type="email"],
+#join-form input[type="tel"],
 #join-form input[type="range"],
 #join-form button {
   border: 1px solid var(--border-color);
