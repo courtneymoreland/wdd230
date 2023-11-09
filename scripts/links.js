@@ -1,5 +1,5 @@
 // Define the base URL and the URL of the links.json data file
-const baseURL = 'https://courtney.github.io/wdd230/'; // Update with your actual URL
+const baseURL = 'https://courtneymoreland.github.io/wdd230/'; 
 const linksURL = baseURL + 'data/links.json';
 
 // Asynchronous function to fetch links data
