@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Discover</title>
+    <meta property="og:title" content="Chamber of Commerce - Discover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="description" content="Explore the area served by our Chamber of Commerce." />
+    <meta name="author" content="Courtney James">
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/logo.svg">
+    <meta property="og:url" content="https://your-website-url/chamber/discover.html">
+    <script src="scripts/index.js"></script>
+    <script src="scripts/directory.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+</head>
+
+<body>
+
+    <div class="home-container">
+        <h1></h1>
+        <div class="home-navbar">
+            <header data-thq="thq-navbar" class="home-navbar-interactive">
+                <div class="home-branding">
+                    <img alt="image" src="images/logo.svg" class="home-logo" />
+                    <span class="home-company">
+                        <span>LocalBizConnect</span>
+                        <br />
+                        <span>Chamber of Commerce</span>
+                    </span>
+                </div>
+                <div class="home-items">
+                    <div class="home-links">
+                        <span class="nav-link"><a href="./index.html">Home</a></span>
+                        <span class="nav-link"><a href="./discover.html">Discover</a></span>
+                        <span class="nav-link"><a href="">Directory</a></span>
+                        <span class="nav-link"><a href="./join.html">Join</a></span>
+                        <label class="switch">
+                            <input type="checkbox" checked onclick="myFunction()">
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                </div>
+                <div data-thq="thq-burger-menu" class="home-burger-menu">
+                    <button class="home-button button">
+                        <img alt="image" src="images/hamburger.svg" class="home-image" />
+                        <span class="home-text07">Join our Chamber</span>
+                    </button>
+                </div>
+                <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+                    <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="home-nav">
+                        <div class="home-top">
+                            <div class="home-branding1">
+                                <img alt="image" src="images/logo.svg" class="home-logo1" />
+                                <span class="home-company1">LocalBizConnect</span>
+                            </div>
+                            <div data-thq="thq-close-menu" class="home-menu-close">
+                                <svg viewBox="0 0 1024 1024" class="home-icon">
+                                    <path
+                                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="home-items1">
+                            <div class="home-links1">
+                                <span class="nav-link"><a href="./index.html">Home</a></span>
+                                <span class="nav-link"><a href="./discover.html">Discover</a></span>
+                                <span class="nav-link"><a href="">Directory</a></span>
+                                <span class="nav-link"><a href="./join.html">Join</a></span>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked onclick="myFunction()">
+                                <span class="slider round"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <main id="directory-main">
+            <h2 id="directory-heading">Business directory</h2>
+            <div id="directory"></div>
+
+        </main>
+
+        <footer class="home-footer">
+            <div class="home-information">
+                <div class="home-container2">
+                    <img alt="image" src="images/logo.svg" class="home-logo2" />
+                    <div class="home-container3">
+                        <div class="home-details">
+                            <div class="home-header">
+                                <div class="home-branding2">
+                                    <span class="home-company2">
+                                        <span>LocalBizConnect</span>
+                                        <br />
+                                        <span>Chamber of Commerce</span>
+                                    </span>
+                                </div>
+                                <div class="home-location">
+                                    <span class="home-caption">Office</span>
+                                    <span class="home-value">
+                                        132, My Street, United States
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home-location1">
+                                <span class="home-caption1">Let's talk</span>
+                                <span class="home-value1">sayhello@localBiz.address</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="home-links2">
+                    <span class="home-social social">Instagram</span>
+                    <span class="home-social1 social">Linkedin</span>
+                    <span class="home-social2 social">Twitter</span>
+                </div>
+            </div>
+            <img class="home-image3"
+                srcset="images/hero-small.webp 480w, images/hero-medium.webp 768w, images/hero-large.webp 900w"
+                sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 900px" src="images/hero-large.webp"
+                alt="Hero Image" />
+
+        </footer>
+    </div>
+    <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
+</html>

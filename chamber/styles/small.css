@@ -40,5 +40,33 @@
       grid-column: 1;
       grid-row: 2;
     }
+
+    
+    .card:nth-of-type(odd) {
+      background-color: #fff4f4;
+  }
+
+  .card {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 1em;
+  }
+
+  .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+  }
+
+  .card img {
+      display: flex;
+  }
+
+  .card-title {
+      text-align: left;
+      font-size: 0.8em;
+  }
+
   }
   
