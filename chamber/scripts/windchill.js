@@ -27,7 +27,7 @@ function toMiles(km) { return km / 1.609; }
  */
 function getWindChill(temperature, windSpeed) {
     // Check values
-    if(temperature <= 50 && windSpeed > 3) {
+    if (temperature <= 50 && windSpeed > 3) {
         // Calculate wind chill
         return 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
     }
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calculate wind chill value
     const windChill = getWindChill(temperature, windSpeed);
     // Set value
-    document.querySelector("#wind-chill span").innerText = isNaN(windChill)? "N/A" : `${toCelsius(windChill).toFixed(1)} °C`;
+    document.querySelector("#wind-chill span").innerText = isNaN(windChill) ? "N/A" : `${toCelsius(windChill).toFixed(1)} °C`;
 });
 
 /**
@@ -63,13 +63,13 @@ async function apiFetch(url) {
         const response = await fetch(url);
         // Verify response
         if (response.ok) {
-        // Get JSON data
-        data = await response.json();
-        // Catch error
+            // Get JSON data
+            data = await response.json();
+            // Catch error
         } else {
             throw Error(await response.text());
         }
-    // Catch error
+        // Catch error
     } catch (error) {
         console.log(error);
         return null;
@@ -95,6 +95,8 @@ function displayResults(weatherData) {
     const desc = weatherData.weather[0].description.capitalize();
     // Set properties
     weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.style.display = 'block';
+
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
     windspeed.innerText = `${weatherData.wind.speed} km/h`;
