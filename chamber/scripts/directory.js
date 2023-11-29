@@ -49,3 +49,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });    
 });
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#directory");
+
+document.addEventListener("DOMContentLoaded", () => {
+    // ... (existing code to fetch and display data)
+
+    const gridbutton = document.querySelector("#grid");
+    const listbutton = document.querySelector("#list");
+    const directory = document.querySelector("#directory");
+
+    // Set default view
+    directory.classList.add("grid-view");
+
+    gridbutton.addEventListener("click", () => {
+        directory.classList.add("grid-view");
+        directory.classList.remove("list-view");
+    });
+
+    listbutton.addEventListener("click", () => {
+        directory.classList.add("list-view");
+        directory.classList.remove("grid-view");
+    });
+});

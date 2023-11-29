@@ -69,7 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
         bannerContent.innerText = "🤝 Come join us for the chamber meet and greet Wednesday at 7:00 pm 🤝";
         // Append elements
         banner.append(bannerContent);
-        document.querySelector("header").prepend(banner);
+// Select the banner container element
+var bannerContainer = document.getElementById('banner-container');
+
+// Assuming bannerContent is already defined and is a DOM element
+bannerContainer.appendChild(bannerContent);
     }
 });
 function myFunction() {
