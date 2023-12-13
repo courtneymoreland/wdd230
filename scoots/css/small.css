@@ -1,0 +1,357 @@
+main {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-frame {
+  display: flex;
+  justify-content: space-between;
+  background: #131313;
+}
+
+.logo {
+  background: #F3CA20;
+  display: none;
+}
+
+.logo img {
+  padding: 10px;
+  max-width: 120px;
+}
+
+.pageHeads {
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+}
+
+.social-media-icon {
+  height: 40px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.link {
+  color: #F3CA20;
+  text-decoration: none;
+}
+h1{
+  font-size: 3em;
+  font-family: 'Playfair Display', sans-serif;
+  color: #F3CA20;
+  animation: pulse 2s infinite alternate; /* Pulsating animation */
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+h2 {
+  font-size: 2em;
+  font-family: 'Playfair Display', sans-serif;
+  color: #000000;
+}
+
+
+h3 {
+  font-size: 1em;
+  font-family: 'Playfair Display', sans-serif;
+  margin: 0;
+  color: #000000;
+}
+
+p {
+  font-family: 'Helvetica', sans-serif;
+}
+
+nav {
+  background-color: #141414;
+  width: 100%;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  font-family: 'Helvetica', sans-serif;
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: #F3CA20;
+  font-weight: 700;
+}
+
+.navigation a:hover,
+a.active {
+  color: #F3CA20;
+  text-decoration: underline white; 
+}
+
+
+.responsive li {
+  display: block;
+}
+
+.header-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .7)),
+    url("../images/caleb-george-landscape.jpg");
+  background-position: bottom center;
+  color: #ffffff;
+  text-align: right;
+  padding: 40px;
+}
+
+.reserveButton {
+  margin: 20px;
+  padding: 10px;
+  background-color: #777777;
+  color: #ffffff;
+}
+
+.homeInfoSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+.infoImg {
+  width: 250px;
+}
+.card {
+  background-color: #ecebeb;
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+  border-bottom: 9px solid #F3CA20;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 2px 16px;
+  flex: 1; 
+}
+
+
+.button {
+  background-color: #F3CA20;
+  box-shadow: -2px -2px 2px 0px rgba(122, 122, 122, 1);
+  border: none;
+  color: #000000;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 10px 50px;
+  cursor: pointer;
+}
+.button-container {
+  text-align: center;
+}
+.btn {
+  background-color: #F3CA20;
+  box-shadow: -2px -2px 2px 0px rgba(122, 122, 122, 1);
+  border: none;
+  color: #000000;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 50px;
+  cursor: pointer;
+}
+.weatherSection {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+ 
+}
+.weatherSummary {   
+  background-color: #ecebeb;
+   
+  padding: 20px;
+  margin: 30px;
+  width: 50%;
+  font-size: 1em;
+  text-align: center;
+  border-bottom: 9px solid  #F3CA20;
+}
+
+.rentalSection {
+  text-align: center;
+}
+
+.rentalSection h3 {
+  padding-top: 50px;
+}
+
+.servicesDiv {
+  border: 2px solid  #F3CA20;
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+  width: 80%;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.servicesDiv:hover {
+  transform: scale(1.02);
+}
+.servicesDiv li {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table {
+  display: inline-block;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid  #F3CA20;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color:  #F3CA20;
+  color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: #9b9a9a;
+}
+
+tr:hover {
+  background-color: #ffd4d4;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form {
+  padding: 20px;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid  #F3CA20;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color:  #000000;
+  margin: 1rem 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #000000;
+  font-size: 1rem;
+}
+
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #000000;
+  padding: .75rem;
+  color: #000000;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem;
+  color: #000000;
+}
+
+form label.top input:reQ~Q1uired {
+  border-left: #8b0e0e solid 6px;
+}
+
+form label.top input:reQ~Q1uired:valid {
+  border-left: green solid 6px;
+}
+.submitBtn {
+  background-color: #F3CA20;
+  box-shadow: -2px -2px 2px 0px rgba(122, 122, 122, 1);
+  border: none;
+  color: #000000;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+.agreement {
+  font-size: .6rem;
+  width: 60%;
+}
+textarea{
+  margin-left: 5px;
+  max-width: 90%;
+}
+.locationDiv {
+  text-align: center;
+  padding: 10px;
+}
+
+iframe {
+  margin: 0px;
+}
+
+.thanks {
+  text-align: center;
+  height: 900px;
+  padding-top: 50px;
+}
